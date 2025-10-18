@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contatti_style.css">
+    <script>
+        function remove () {
+            window.alert('Richiesta di rimborso avvenuta con successo')
+            let a=document.getElementById("kl");
+            kl.value="";
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title> Contatti </title>
+</head>
+<body>
+    <div class="header-content">
+        <header>
+            <nav>
+                <h1><a href="#" id="title">VintageVibes</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="chiSiamo.html">Chi siamo</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="#"><button>Accedi</button></a></li>
+                    <li><div class="bottoneCarrello"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOJJREFUSEvNlMsNwjAQRF86gU6gE7hCEUARcAUqgU6gE/AgW8rX3jgYsadIdubt7McVhaMqrM9PAS/v5glc3ff+G+7qDgIg6C6B+1RIX4lWwNmLCzIp+gAz4OFVJ7sYarIcyEluqI9z/TwEqLvIgSQBEr25Pixy1F3ihzCFsT0Izc5hqDxyEV203DJdgHXIKrXJWrbdSAsSF+QTKUCOi4ZmCjC22Y3yWBzojiZJE2WJzmJaHEjY0gu9W52nxQqwZN97xwo4AhvgBGxbSrGz5BQFrfpT3k4qdmYGFHdQvAf/C3gDp+smGX2YUKEAAAAASUVORK5CYII="></div><span class="bottone-carrello" id="numeroProdotti">0</span></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+    </div>
+    <div class="inizio">
+        <h1> Come possiamo aiutarti? </h1>
+        <span id="centro">
+            Attraverso il centro assistenza clienti, telefonico, modulo contatti o appuntamento,<br>
+            risponderemo ad ogni tua domanda.
+        </span>
+    </div>
+    <br><br><br><br>
+    <div class="slot">
+        <div class="chiamaci">
+            <img src="./Immagini/telefono.png"><h3> Chiamaci </h3>
+            <h5> Contatta il nostro servizio clienti </h5>
+            <div class="pulsante"><a href="#telefono"> > </a></div>
+        </div>
+        <div class="scrivici">
+            <img src="./Immagini/foglio.png"><h3> Scrivici </h3>
+            <h5> Compila il modulo e inviaci il tuo messaggio </h5>
+            <div class="pulsante"><a href="#mail"> > </a></div>
+        </div>
+        <div class="rimborsi">
+            <img src="./Immagini/rimborso.png"><h3> Rimborso </h3>
+            <h5> Soddisfatti o rimborsati! </h5>
+            <div class="pulsante"><a href="#last"> > </a></div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="banner">
+            <div class="apple">
+                <img src="./Immagini/oralb.png">
+            </div>
+            <div class="testo">
+                <span> Sconto fino al </span>
+                <h3> 50% </h3>
+                <p> Pulizia intensiva </p>
+                <a href="https://shop.oralb.it/" class="off" target="_blank"> Scopri di più </a> 
+            </div>
+            <div class="iphone">
+                <img src="./Immagini/spazzolini.png">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div id="telefono">
+       <h2> Recapiti telefonici </h2>
+       <h4> Margherita Lastrucci: +39 347 357 7643 </h4>
+       <h4> Diego Bragetta: +39 375 564 1981 </h4>
+       <h4> Mario Lorenzo Pergola: +39 333 687 3360 </h4>
+    </div>
+    <br><br>
+    <div id="mail">
+        <h2> Contattaci alle seguenti mail </h2>
+        <h4><a href="mailto:margherita.lastrucci.stud@tulliobuzzi.edu.it"> Margherita Lastrucci </a></h4>
+        <h4><a href="mailto:diego.bragetta.stud@tulliobuzzi.edu.it"> Diego Bragetta </a></h4>
+        <h4><a href="mailto:mariolorenzo.pergola.stud@tulliobuzzi.edu.it"> Mario Lorenzo Pergola </a></h4>
+    </div>
+    <br><br>
+    <div id="last">
+        <h2> Inserisci la motivazione del rimborso: </h2>
+        <input type="text" id="kl"></input>
+        <div class="klb">
+            <button type="button" id="button"><a onclick="remove()"> Invia </a></button> <!-- metti collegamento al menu-->
+        </div>
+    </div>
+</body>
+</html>
